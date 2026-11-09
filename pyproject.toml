@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="worldpins"
+version="0.0.1"
+description="Place pins on a world map and export as an SVG/PDF file"
+readme = "README.md"
+requires-python=">=3.11"
+dependencies=[
+    "matplotlib>=3.8",
+    "cartopy>=0.22",
+]
+
+[project.scripts]
+worldpins = "worldpins.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/worldpins"]

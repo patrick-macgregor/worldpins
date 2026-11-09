@@ -1,0 +1,28 @@
+sea = "#a0d8eb"
+land = "#daf7e3"
+font_family = "Aptos"
+border_colour = "#afbacb"
+border_width = 0.4
+pin_colour = ["crimson","blue"]
+label_colour = ["black", "black"]
+key = ["ISOL-type facilities", "In-flight-type facilities"]
+key_position = [1,0]
+key_anchor = "lower right"
+key_colour = ["#444444", "#FFFFFF"]
+pin_size = 2
+label_size = 8
+resolution = "110m" # 110m, 50m or 10m
+label_offset_magnitude = 2
+
+[inset]
+extent = [-15, 60, 34, 72]          # lon_min, lon_max, lat_min, lat_max
+position = [0.14, 0.1, 0.2, 0.4] # left, bottom, width, height (figure fractions)
+projection = "mercator"             # mercator, plate_carree or lambert
+resolution = "50m"
+pin_size = 2
+label_size = 7
+border_colour = "#444444"
+border_width = 1.0
+show_box = true                     # outline the region on the world map
+pins_on_main = false# keep the pins on the world map too
+label_offset_magnitude = 2
